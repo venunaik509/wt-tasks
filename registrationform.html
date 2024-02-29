@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        input{
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: #EEEEEE;">
+    <div style="background-color: white;margin: 6%;">
+    <div style="display: grid; align-items: center;" class="form">
+        <h1 style="text-align: center;">Registration Form</h1>
+        <form style="margin: 50px; display: flex; justify-content: center ;" >
+            <fieldset>
+                <legend>Personal Details</legend>
+                
+                <label for="Fname">First Name: </label>
+                <input type="text" id="Fname" placeholder="enter name" required style="margin-right: 15px;">
+                <label for="Sname">Last Name: </label>
+                <input type="text" id="Sname" placeholder="enter name" required>
+                <br>
+                <label for="gender">Gender: </label>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+                <br>
+                <label for="college">College Name:</label>
+                <input type="text" id="college" value="Sree Vidyanikethan Engineering College" readonly>
+                <br>
+                <label for="dept">Department Name:</label>
+                <input type="text" id="dept">
+                <br>
+                <label for="phone">Phone:</label>
+                <input type="number" name="phone">
+                <br>
+                <label for="blood">Blood Group:</label>
+                <select name="blood" id="blood" style="margin-top: 10px;">
+                    <option value="">O<sup>-</sup></option>
+                    <option value="">O<sup>+</sup></option>
+                    <option value="" selected>A<sup>-</sup></option>
+                    <option value="">A<sup>+</sup></option>
+                    <option value="">B<sup>-</sup></option>
+                    <option value="">B<sup>+</sup></option>
+                    <option value="">AB<sup>-</sup></option>
+                    <option value="">AB<sup>+</sup></option>
+                </select>
+                <br>
+                Email:
+                <input type="email">
+                <br>
+                Address: <input type="text">
+                <br>
+                <input type="submit" >
+                <input type="reset">
+            </fieldset>
+        </form>
+    </div> 
+    </div> 
+     
+</body>
+</html>

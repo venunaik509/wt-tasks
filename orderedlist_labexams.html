@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restuarant Menu</title>
+    <style>
+        .rest{
+            background-color: antiquewhite;
+        }
+        img{
+           background-image: url(restuarant.jpeg);
+            background-repeat: repeat-x;
+            background-size: 100px;
+        }
+        h1{
+            text-align: center;
+            background-color: orange;
+        }
+        h2,h3{
+            text-align: center;
+            background-color: rgb(64, 220, 64);
+        }
+        .menu{
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function showDescription(item) {
+            alert(item.dataset.description);
+        }
+        function removeItem(item) {
+            item.removeItem();
+        }
+        function handleResize() { 
+            document.body.innerHTML = '<p>Please reload to view the menu</p>';
+        }
+    </script>
+</head>
+<body>
+    <div style="background-image: url(https://th.bing.com/th/id/OIP.3JuA0-BIEyyCceG24Arr3gHaE8?rs=1&pid=ImgDetMain);opacity:1px;">
+    <h1><i>AADHYA RESTAURANT</i></h1>
+    <h3>Restuarant Menu</h1>
+    <fieldset>
+        <legend>Veg Section</legend>
+        <ol>
+            <h3>Items</h3>
+            <li class="menu" data-description="Rotis are made of less oil" onclick="showDescription(this)" ondblclick="removeItem(this)">Rotis</li>
+            <li class="menu" data-description="ButterNons are made of less oil" onclick="showDescription(this)" ondblclick="removeItem(this)">Butter Nons</li>
+            <li class="menu" data-description="Chapatis are made in italian style" onclick="showDescription(this)" ondblclick="removeItem(this)">Chapatis</li>
+            <li class="menu" data-description="Gobi is the special of the Restuarant" onclick="showDescription(this)" ondblclick="removeItem(this)">Gobi Manchurian</li>
+        </ol>
+            <ul>
+                <h3>Veg Curries</h3>
+                <li class="menu" data-description="Panner Curry is made of Panner" onclick="showDescription(this)" ondblclick="removeItem(this)">Panner Curry</li>
+                <li class="menu" data-description="Kaju Curry is made of delicious kajus" onclick="showDescription(this)" ondblclick="removeItem(this)">Kaju Curry</li>
+                <li class="menu" data-description="Panner Butter Masala is made of both kaju and panner" onclick="showDescription(this)" ondblclick="removeItem(this)">Panner Butter Masala</li>
+                <li class="menu" data-description="Kaju Butter Masala is made by roasting kajus" onclick="showDescription(this)" ondblclick="removeItem(this)">Kaju Butter Masala</li>
+            </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Non-Veg Section</legend>
+            <ul>
+                <h3>Non-Veg Curries</h3>
+                <li class="menu" data-description="Chicken is roasted here" onclick="showDescription(this)" ondblclick="removeItem(this)">Chicken Butter Masala</li>
+                <li class="menu" data-description="Kabab is served in pieces" onclick="showDescription(this)" ondblclick="removeItem(this)">Chicken Kabab</li>
+                <li class="menu" data-description="5 pieces are served" onclick="showDescription(this)" ondblclick="removeItem(this)">Chicken 65</li>
+                <li class="menu" data-description="This is the restuarant special" onclick="showDescription(this)" ondblclick="removeItem(this)">Chicken Lollipop</li>
+            </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Drinks</legend>
+            <ol>
+                <h3>Drinks</h3>
+                <li class="menu" data-description="It is made of apples" onclick="showDescription(this)" ondblclick="removeItem(this)">Apple MilkShake</li>
+                <li class="menu" data-description="It is made of oreo biscuits" onclick="showDescription(this)" ondblclick="removeItem(this)">Oreo MilkShake</li>
+                <li class="menu" data-description="It is made of mangoes" onclick="showDescription(this)" ondblclick="removeItem(this)">Mango Juice</li>
+                <li class="menu" data-description="It is made of Custard Apples" onclick="showDescription(this)" ondblclick="removeItem(this)">Custard Apple Juice</li>
+            </ol>
+            <h1><i>Thanks for Coming!...Visit Us Again :)</i></h1>
+            <img src="restuarant.jpeg" alt="menu">
+            <script>
+                window.addEventListener('resize', handleResize);
+            </script>
+    </fieldset>
+</div>
+</body>
+</html>

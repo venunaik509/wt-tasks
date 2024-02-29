@@ -1,0 +1,1394 @@
+<!-- College Website -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sree Vidyanikethan Engineering College</title>
+    <!-- <link rel="icon" href="/svec logo.png"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            font-family: Arial;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        /*****************/
+
+        .header1 {
+            width: 100%;
+            height: 196px;
+        }
+
+        #img-svec {
+            width: 200px;
+            height: 106px;
+            position: relative;
+            left: 180px;
+            top: 5px;
+        }
+
+        #img-svec-1 {
+            width: 100%;
+            height: 106px;
+            background-image: url("/svec\ logo.png");
+        }
+
+        .links {
+            display: flex;
+            gap: 4px;
+            position: relative;
+            left: 580px;
+            bottom: 95px;
+        }
+
+        .link-1 {
+            text-decoration: none;
+            color: #000000;
+            font-size: 12px;
+            width: fit-content;
+            height: fit-content;
+            padding: 3px;
+        }
+
+        .links span {
+            color: #ED2C5A;
+            font-size: 25px;
+            position: relative;
+            bottom: 7px;
+        }
+
+        .link-1:hover {
+            background-color: #ED2C5A;
+        }
+
+        .link-1:hover {
+            color: white;
+            transition: all 0.4s;
+        }
+
+        #header-1-contact {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            left: 790px;
+            bottom: 80px;
+        }
+
+        #header-1-contact a {
+            text-decoration: none;
+            margin-left: 8px;
+            color: #000000;
+            font-size: 16px;
+        }
+
+        #header-1-content {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            left: 560px;
+            bottom: 50px;
+            animation: blink-content 1.5s ease-in infinite alternate;
+        }
+
+        @keyframes blink-content {
+            0% {
+                opacity: 100%;
+            }
+            100% {
+                opacity: 0%;
+            }
+        }
+
+        #header-1-content p {
+            font-size: 12px;
+            color: #27334F;
+            font-weight: bold;
+        }
+
+        #header-1-content span {
+            font-size: 18px;
+            color: #ED2D5A;
+        }
+
+        #header-1-icons {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            left: 1153.5px;
+            bottom: 187px;
+        }
+
+        #header-1-icons-2 {
+            display: inline-block;
+            position: relative;
+            left: 970px;
+            bottom: 179px;
+            display: flex;
+            gap: 7px;
+        }
+
+        /************************/
+
+        .nav-1 {
+            width: 100%;
+            height: 40px;
+            background-color: #27334F;
+        }
+
+        #links-2 {
+            display: flex;
+            height: 40px;
+            gap: 2px;
+            position: relative;
+            left: 180px;
+        }
+
+        #home-logo {
+            width: 28px;
+            background-color: #ED2D5A;
+            display: flex;
+            justify-content: center;
+            padding-top: 12px;
+        }
+
+        .nav-1 a {
+            text-decoration: none;
+            color: #FFFFFF;
+            padding-top: 11px;
+            padding-left: 2px;
+            padding-right: 3.5px;
+            font-size: 14px;
+            position: relative;
+            border-right: 1px solid red;
+        }
+
+        #links-2 a:hover {
+            background-color: #ED2D5A;
+        }
+
+        #nav-3 {
+            width: 100%;
+            height: 52px;
+            display: flex;
+        }
+
+        #nav-3-content-1 {
+            height: 52px;
+            width: 550px;
+            z-index: 5;
+            display: inline-block;
+            margin-left: 220px;
+            padding-top: 3px;
+            line-height: 20px;
+        }
+
+        #nav-3-content-1 span {
+            padding-top: 2px;
+            font-size: 15px;
+            color:#27334F;
+            font-weight: bold;
+            line-height: 23px;
+        }
+
+        #nav-3-content-2 {
+            font-size: 16px;
+            color: #ED2D5A;
+            position: relative;
+            line-height: 18px;
+            padding-top: 3px;
+        }
+
+        #nav-3-content-2 marquee {
+            z-index: -2;
+            padding-top: 3px;
+        }
+
+        #nav-3-content-3 {
+            width: 400px;
+            height: 52px;
+            display: inline-block;
+        }
+
+        #picture {
+            width: 100%;
+            height: 650px;
+            background-image: url("home-svec.jpeg");
+            background-size: cover;
+        }
+
+        /*********************/
+
+        #body-1 {
+            width: 100%;
+            height: 910px;
+        }
+
+        #body-1-box-1 {
+            width: 374px;
+            height: 442px;
+            border: 1.5px solid #ED2D5A;
+            position: relative;
+            top: 5px;
+            left: 180px;
+        }
+
+        #body-1-box-1-content {
+            width: 350px;
+            height: 419px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 2px;
+            position: relative;
+            left: 10px;
+            top: 10px;
+            box-shadow: 1.5px 1.5px 15px grey;
+        }
+
+        #body-1-box-1-content-img {
+            width: 346px;
+            height: 187px;
+        }
+
+        #body-1-box-1-content-img1 {
+            width: 348px;
+            height: 187px;
+            background-image: url("mohan-babu-chairman.jpg");
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        #body-1-box-1-content #p1 {
+            font-size: 15px;
+            font-weight: bold;
+            position: relative;
+            left: 68px;
+            top: 14px;
+        }
+
+        #body-1-box-1-content p {
+            font-size: 16px;
+            line-height: 25px;
+            position: relative;
+            top: 30px;
+            left: 7px;
+
+        }
+
+        #body-1-box-1-content button {
+            width: 108px;
+            height: 32px;
+            background-color: #27334F;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: bold;
+            position: relative;
+            left: 220px;
+            top: 35px;
+        }
+
+        #body-1-box-1-content:hover {
+            background-color: #27334F;
+            color: #FFFFFF;
+        }
+
+        #body-1-box-1-content button:hover {
+            background-color: #FFFFFF;
+            color: #27334F;
+            transition: all 0.4s ease;
+        }
+
+        #body-1-box-2 {
+            width: 374px;
+            height: 442px;
+            border: 1.5px solid #ED2D5A;
+            position: relative;
+            left: 180px;
+            top: 10px;
+        }
+
+        #body-1-box-2-content {
+            width: 350px;
+            height: 419px;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            padding: 2px;
+            position: relative;
+            left: 10px;
+            top: 10px;
+            box-shadow: 1.5px 1.5px 15px grey;
+        }
+
+        #body-1-box-2-content-img {
+            width: 346px;
+            height: 187px;
+        }
+
+        #body-1-box-2-content-img1 {
+            width: 348px;
+            height: 187px;
+            background-image: url("mohan-babu-chairman.jpg");
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        #body-1-box-2-content #p1 {
+            font-size: 15px;
+            font-weight: bold;
+            position: relative;
+            left: 90px;
+            top: 14px;
+        }
+
+        #body-1-box-2-content p {
+            font-size: 16px;
+            line-height: 25px;
+            position: relative;
+            top: 30px;
+            left: 7px;
+        }
+
+        #body-1-box-2-content-img2 {
+            width: 348px;
+            height: 187px;
+            background-image: url("/ceo-vishnu-manchu.jpg");
+            background-size: cover;
+            border-radius: 10px;
+        }
+
+        #body-1-box-2 button {
+            width: 108px;
+            height: 32px;
+            background-color: #27334F;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: bold;
+            position: relative;
+            left: 220px;
+            top: 55px;
+        }
+
+        #body-1-box-2-content:hover {
+            background-color: #27334F;
+            color: #FFFFFF;
+        }
+
+        #body-1-box-2-content button:hover {
+            background-color: #FFFFFF;
+            color: #27334F;
+        }
+
+
+        /***************************************/
+
+        #body-1-box-3 {
+            width: 780px;
+            height: 572px;
+            position: relative;
+            left: 570px;
+            bottom: 880px;
+        }
+        
+        #body-1-box-3-content-1-box-1 {
+            width: 780px;
+            height: 51px;
+            background-color: #ED2D5A;
+            color: #FFFFFF;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        #body-1-box-3-content-1-box-1 #logo {
+            font-size: 17px;
+            margin-left: 25px;
+            position: relative;
+            top: 17px;
+        }
+
+        #body-1-box-3-content-1-box-1 #notification {
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            left: 13px;
+            top: 1px;
+        }
+
+        #body-1-box-3-content-1-box-2 {
+            width: 779px;
+            height: 512px;
+            border-top: 1.5px solid #ED2D5A;
+            border-right: 1.5px solid #ED2D5A;
+            border-bottom: 1.5px solid #ED2D5A;
+            border-left: 1.5px solid #ED2D5A;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        #body-1-box-3-content-1-box-2-content {
+            position: relative;
+            left: 30px;
+            top: 20px;
+            line-height: 38.5px;
+        }
+
+        #body-1-box-3-content-1-box-2 a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #337AB7;
+        }
+
+        #body-1-box-3-content-1-box-2 a:hover {
+            color: #ED2D5A;
+        }
+
+        #body-1-box-3-content-1-box-3 {
+            width: 779px;
+            height: 40px;
+            background-color: #FFFFFF;
+            position: relative;
+        }
+
+        #body-1-box-3-content-1-box-3 button {
+            width: 108px;
+            height: 32px;
+            background-color: #27334F;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: bold;
+            position: relative;
+            left: 640px;
+        }
+
+        #body-1-box-3-content-1-box-3 button:hover {
+            background-color: #FFFFFF;
+            color: #27334F;
+            transition: all 0.4s ease;
+        }
+
+        #body-1-box-3-content-1-box-4 {
+            width: 779px;
+            height: 39px;
+            border-left: 0px solid #ED2D5A;
+            background-color: #F5F5F5;
+            border-top: 1.5px solid #ED2D5A;
+            border-bottom: 1.5px solid #ED2D5A;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        #body-1-box-3-content-1-box-4 button {
+            width: 27px;
+            height: 28px;
+            background-color: #FFFFFF;
+            color: #337AB7;
+            border: none;
+            position: relative;
+            left: 690px;
+            top: 5px;
+        }
+
+        /************************************/
+
+        #body-1-box-4 {
+            width: 780px;
+            height: 250px;
+            position: relative;
+            left: 570px;
+            bottom: 880px;
+        }
+        
+        #body-1-box-4-content-1-box-1 {
+            width: 780px;
+            height: 51px;
+            background-color: #ED2D5A;
+            color: #FFFFFF;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        #body-1-box-4-content-1-box-1 #logo {
+            font-size: 17px;
+            margin-left: 25px;
+            position: relative;
+            top: 17px;
+        }
+
+        #body-1-box-4-content-1-box-1 #notification {
+            font-size: 16px;
+            font-weight: bold;
+            position: relative;
+            left: 13px;
+            top: 1px;
+        }
+
+        #body-1-box-4-content-1-box-2 {
+            width: 779px;
+            height: 242px;
+            border-top: 1.5px solid #ED2D5A;
+            border-right: 1.5px solid #ED2D5A;
+            border-bottom: 1.5px solid #ED2D5A;
+            border-left: 1.5px solid #ED2D5A;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        #body-1-box-4-content-1-box-2-content {
+            position: relative;
+            left: 30px;
+            top: 20px;
+            line-height: 38.5px;
+        }
+
+        #body-1-box-4-content-1-box-2 a {
+            font-size: 15px;
+            text-decoration: none;
+            color: #337AB7;
+        }
+
+        #body-1-box-4-content-1-box-2 a:hover {
+            color: #ED2D5A;
+        }
+
+        #body-1-box-4-content-1-box-3 {
+            width: 779px;
+            height: 40px;
+            background-color: #FFFFFF;
+            position: relative;
+            top: 45px;
+        }
+
+        #body-1-box-4-content-1-box-3 button {
+            width: 108px;
+            height: 32px;
+            background-color: #27334F;
+            color: #FFFFFF;
+            font-size: 13px;
+            font-weight: bold;
+            position: relative;
+            left: 640px;
+        }
+
+        #body-1-box-4-content-1-box-3 button:hover {
+            background-color: #FFFFFF;
+            color: #27334F;
+            transition: all 0.4s ease;
+        }
+
+        #body-1-box-4-content-1-box-4 {
+            width: 779px;
+            height: 39px;
+            border-left: 0px solid #ED2D5A;
+            background-color: #F5F5F5;
+            border-top: 1.5px solid #ED2D5A;
+            border-bottom: 1.5px solid #ED2D5A;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            position: relative;
+            top: 44.5px;
+        }
+
+        #body-1-box-4-content-1-box-4 button {
+            width: 27px;
+            height: 28px;
+            background-color: #FFFFFF;
+            color: #337AB7;
+            border: none;
+            position: relative;
+            left: 690px;
+            top: 5px;
+        }
+
+        /****************/
+
+        #body-2 {
+            width: 100%;
+            height: 392px;
+        }
+
+        #body-2-box-1 {
+            width: 1172px;
+            height: 50px;
+            background-color: #ED2D5A;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            position: relative;
+            left: 179px;
+        }
+
+        #body-2-box-1 #logo {
+            font-size: 17px;
+            color: #FFFFFF;
+            margin-left: 25px;
+            position: relative;
+            top: 15px;
+        }
+
+        #body-2-box-1 #name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFFFFF;
+            position: relative;
+            left: 13px;
+            top: 0.5px;
+        }
+
+        #body-2-box-1 a{
+            text-decoration: none;
+            font-size: 16px;
+            color: #FFFFFF;
+            position: relative;
+            left: 935px;
+            top: 15px;
+        }
+
+        #body-2-img {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            border-radius: 5px;
+            box-shadow: 0px 1px 15px rgb(187, 187, 187);
+        }
+
+        #body-2-img:hover {
+            box-shadow: 3px 6px 30px grey;
+            transition: all 0.2s ease-in;
+        }
+
+        #body-2-images {
+            width: fit-content;
+            height: fit-content;
+            padding-top: 12px;
+            display: flex;
+            gap: 10px;
+            position: relative;
+            left: 178px;
+        }
+
+        #body-2-images-content {
+            width: 380px;
+            height: 75px;
+            background-color: #FFFFFF;
+            position: relative;
+            bottom: 5px;
+            border: none;
+        }
+
+        #body-2-images-content span {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 14px;
+        }
+
+        #body-2-images-content a {
+            text-decoration: none;
+            color: #337AB7;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 25px;
+        }
+
+        /****************/
+
+        #body-3 {
+            width: 100%;
+            height: 430px;
+        }
+
+        #body-3-box-1 {
+            width: 1172px;
+            height: 50px;
+            background-color: #ED2D5A;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            position: relative;
+            left: 179px;
+        }
+
+        #body-3-box-1 #logo {
+            font-size: 17px;
+            color: #FFFFFF;
+            margin-left: 25px;
+            position: relative;
+            top: 15px;
+        }
+
+        #body-3-box-1 #name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFFFFF;
+            position: relative;
+            left: 13px;
+            top: 0.5px;
+        }
+
+        #body-3-box-1 a{
+            text-decoration: none;
+            font-size: 16px;
+            color: #FFFFFF;
+            position: relative;
+            left: 946px;
+            top: 16px;
+        }
+
+        #body-3-img {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            box-shadow: 0px 2.5px 3px rgb(187, 187, 187);
+        }
+
+        #body-3-images {
+            width: fit-content;
+            height: fit-content;
+            padding-top: 11px;
+            display: flex;
+            gap: 8px;
+            position: relative;
+            left: 178px;
+        }
+
+        #body-3-images-content {
+            width: 287px;
+            height: 125px;
+            background-color: #FFFFFF;
+            position: relative;
+            bottom: 3px;
+            border: none;
+        }
+
+        #body-3-images-content span {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: 14px;
+        }
+
+        #body-3-images-content a {
+            text-decoration: none;
+            color: #337AB7;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        /*****************/
+
+        #body-4 {
+            width: 100%;
+            height: 458px;
+        }
+
+        #body-4-box-1 {
+            width: 1172px;
+            height: 50px;
+            background-color: #ED2D5A;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            position: relative;
+            left: 179px;
+        }
+
+        #body-4-box-1 #logo {
+            font-size: 17px;
+            color: #FFFFFF;
+            margin-left: 25px;
+            position: relative;
+            top: 15px;
+        }
+
+        #body-4-box-1 #name {
+            font-size: 16px;
+            font-weight: bold;
+            color: #FFFFFF;
+            position: relative;
+            left: 13px;
+            top: 0.5px;
+        }
+
+        #body-4-box-1 a{
+            text-decoration: none;
+            font-size: 16px;
+            color: #FFFFFF;
+            position: relative;
+            left: 846px;
+            top: 16px;
+        }
+
+        #body-4-images {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            gap: 7.5px;
+        }
+
+        #body-4-images-cont {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            left: 179px;
+            top: 11px;
+            box-shadow: 0.2px 2.8px 3px rgb(187, 187, 187);
+        }
+
+        #body-4-date {
+            width: 287px;
+            height: 97.99px;
+            background-color: #27334F;
+            color: #FFFFFF;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #body-4-date #day {
+            font-size: 16px;
+            position: relative;
+            top: 13px;
+        }
+
+        #body-4-date #on {
+            font-size: 12px;
+            position: relative;
+            top: 26px;
+        }
+
+        #body-4-date #date {
+            font-size: 16px;
+            position: relative;
+            top: 31px;
+        }
+
+        #body-4-img {
+            width: 287px;
+            height: 190px;
+        }
+
+        #body-4-content {
+            width: 287px;
+            height: 54.85px;
+            background-color: #FFFFFF;
+            text-align: center;
+        }
+
+        #body-4-content a {
+            text-decoration: none;
+            font-size: 16px;
+            color: #337AB7;
+            position: relative;
+            top: 16px;
+        }
+
+        /*******************/
+
+        #footer-1 {
+            width: 100%;
+            height: 561px;
+            background-color: #27334F;
+            padding-top: 20px;
+        }
+
+        #footer-1-header-1 {
+            width: 873.5px;
+            height: 36.8px;
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            left: 178px;
+            border-bottom: 1.5px solid #FFFFFF;
+        }
+
+        .footer-links a, .footer-links li {
+            text-decoration: none;
+            color: #FFFFFF;
+            font-size: 14px;
+            line-height: 31.5px;
+        }
+
+        #footer-1-links-1,#footer-1-links-2,#footer-1-links-3 {
+            width: fit-content;
+            height: fit-content;
+        }
+
+        #footer-links {
+            width: fit-content;
+            height: fit-content;
+            display: flex;
+            gap: 108px;
+            position: relative;
+            left: 205px;
+            bottom: 10px;
+        }
+
+        #footer-1-header-2 {
+            width: 292.5px;
+            height: 36.8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1.5px solid #FFFFFF;
+            position: relative;
+            left: 1055px;
+            bottom: 37.5px;
+        }
+
+        #footer-1-header-2 span {
+            color: #FFFFFF;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #footer-1-content-1 {
+            width: fit-content;
+            height: fit-content;
+            line-height: 23.54px;
+            position: relative;
+            left: 1065px;
+            bottom: 477px;
+        }
+
+        #footer-1-content-1 span {
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        #footer-1-content-2 {
+            width: fit-content;
+            height: fit-content;
+            line-height: 31px;
+            position: relative;
+            left: 1065px;
+            bottom: 455px;
+        }
+
+        #footer-1-content-2 span {
+            color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        #footer-1-icons {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            left: 1080px;
+            bottom: 436px;
+        }
+
+        #footer-1-icons a {
+            margin-right: 5.8px;
+        }
+
+        #footer-1-content-3 {
+            width: fit-content;
+            height: fit-content;
+            position: relative;
+            left: 1065px;
+            bottom: 414px;
+        }
+
+        #footer-1-content-3 a {
+            font-size: 14px;
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+
+        /************************/
+
+        #footer-2 {
+            width: 100%;
+            height: 50px;
+            background-color: #101D3C;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #footer-2 span {
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+
+        #footer-2 a {
+            color: #1E73BE;
+            text-decoration: none;
+        }
+
+        #footer-2 a:hover {
+            color: #FFFFFF;
+            transition: all 0.3s ease-in;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header1">
+        <div id="img-svec">
+            <div id="img-svec-1"></div>
+        </div>
+        <div class="links">
+            <a class="link-1" href="#">Site Search <i class="fa-solid fa-magnifying-glass"></i></a><span>\</span>
+            <a class="link-1" href="#">A-Z Directory</a><span>\</span>
+            <a class="link-1" href="#">Gallery</a><span>\</span>
+            <a class="link-1" href="#">Careers</a><span>\</span>
+            <a class="link-1" href="#">Alumni</a><span>\</span>
+            <a class="link-1" href="#">Student/Parent NIVA Login</a><span>\</span>
+            <a class="link-1" href="#">Academic Verification</a><span>\</span>
+            <a class="link-1" href="#">Contact Us</a>
+        </div>
+        <div id="header-1-contact">
+            <a href="#"><i class="fa-solid fa-phone"></i> +91-877-2504888 </a> <a href="#"> <i class="fa-solid fa-envelope"></i> info@vidyanikethan.edu</a>
+        </div>
+        <div id="header-1-content">
+            <p>From the Academic Year 2023-2024, admissions through AP EAPCET<br>
+                 / AP ECET / AP ICET / AP PGECET will be held with the Counseling<br>
+                Code: <span>MBUTPU1 & MBUTPU2</span><br>
+                Admissions into Diploma through AP POLYCET will be held with the <br>
+                Counseling Code: <span>SVNE</span></p>
+        </div>
+        <div id="header-1-icons">
+            <a href="https://www.facebook.com/MBUSchoolofEngineeringandTechnology" target="_blank"><img src="/facebook-icon.png" alt="" width="30px" height="30px" style="border-radius: 50%;"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIVidyanikethan" target="_blank"><img src="/twitter-icon.png" alt="" width="30px" height="30px" style="border-radius: 50%;"></a>
+            <a href="https://www.linkedin.com/company/sree-vidyanikethan-educational-institutions" target="_blank"><img src="/linkedlin-logo.png" alt="" width="30px" height="30px" style="border-radius: 50%;"></a>
+            <a href="https://www.instagram.com/sreevidyanikethanenggcollege/" target="_blank"><img src="/instagram-logo.png" alt="" width="30px" height="30px"></a>
+            <a href="https://www.youtube.com/user/iVidyanikethan" target="_blank"><img src="/youtube-icon.avif" alt="" width="30px" height="30px"></a>
+        </div>
+        <div id="header-1-icons-2">
+            <img src="/svec-home-page-img12.jpg" alt="" width="59.2px" height="40px">
+            <img src="/svec-home-page-img13.jpg" alt="" width="94.06px" height="40px">
+            <img src="/svec-home-page-img14.jpg" alt="" width="43.2px" height="40px">
+            <img src="/svec-home-page-img15.jpg" alt="" width="34px" height="40px">
+            <img src="/svec-home-page-img16.jpg" alt="" width="43.2px" height="40px">
+            <img src="/svec-home-page-img17.jpg" alt="" width="43.2px" height="40px">
+        </div>
+    </div>
+
+    <div class="nav-1">
+        <div id="links-2">
+            <a id="home-logo" href="#"><i class="fa-solid fa-house"></i></a>
+            <a href="#">About Us</a>
+            <a href="#">Admissions</a>
+            <a href="#">Academics</a>
+            <a href="#">Exams</a>
+            <a href="#">Research & Consultancy</a>
+            <a href="#">Innovation & Entrepreneurship</a>
+            <a href="#">Training & Placements</a>
+            <a href="#">Industry Relations</a>
+            <a href="#">Campus Life</a>
+        </div>
+    </div>
+
+    <div id="nav-3">
+        <div id="nav-3-content-1">
+            <span>Placements: 2023 Graduating Batch - </span><br>
+            <span>Placements: 2022 Graduating Batch - </span>
+        </div>
+        <div id="nav-3-content-2">
+            <marquee behavior="" direction="">Dream Offers: 350+, Companies Visited: 92, Offers received: 1807, Highest Package: 44Lakhs, Average Package: 6 LPA</marquee>
+            <marquee behavior="" direction="">Dream Offers: 300+, Companies Visited: 74, Offers received: 2026, Highest Package: 60,Lakhs, Average Package: 5.9 LPA</marquee>
+        </div>
+        <div id="nav-3-content-3"></div>
+    </div>
+
+    <div id="picture"></div>
+
+    <div id="body-1">
+        <div id="body-1-box-1">
+            <div id="body-1-box-1-content">
+                <div id="body-1-box-1-content-img">
+                    <div id="body-1-box-1-content-img1"></div>
+                </div>
+                <p id="p1">MESSAGE FROM CHAIRMAN</p>
+                <p>Sree Vidyanikethan Education Trust (SVET) <br> was established in 1992, it has surpassed <br> many a milestone. As an individual, I have the <br> best memories and biggest learning <br> experiences...</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div id="body-1-box-2">
+            <div id="body-1-box-2-content">
+                <div id="body-1-box-2-content-img">
+                    <div id="body-1-box-2-content-img2"></div>
+                </div>
+                <p id="p1">MESSAGE FROM CEO</p>
+                <p>Whilst Sree Vidyanikethan has marked its <br> successful Silver Jubilee in the field of <br> Education, I express my heartfelt gratitude for <br> all your continued support..</p>
+                <button>Read More</button>
+            </div>
+        </div>
+        <div id="body-1-box-3">
+            <div id="body-1-box-3-content-1">
+                <div id="body-1-box-3-content-1-box-1">
+                    <span id="logo"><i class="fa-regular fa-calendar-days"> </i><span id="notification">Notifications</span></span>
+                </div>
+                <div id="body-1-box-3-content-1-box-2">
+                    <div id="body-1-box-3-content-1-box-2-content">
+                        <ul>
+                            <li><a href="#">Recruitment Notification for Project Staff (Adv No.:DST-STI H/03)</a></li>
+                            <li><a href="#">Notification for Formation of Self Help Groups (Adv No.: DST-STIH/SHG/01)</a></li>
+                            <li><a href="#">Application Form for Candidature in Self Help Group </a></li>
+                            <li><a href="#">One Week National Level FDP on Amazon Web Services From 22nd to 27th August,2022 in association... </a></li>
+                            <li><a href="#">11th Graduation Day on 21.08.2022</a></li>
+                            <li><a href="#">SVEC has signed a MoU with M/S Samparkbindhu Solutions Private Limited, Bengaluru on 21-12-2021... </a></li>
+                            <li><a href="#">An Online National Conference on Knowledge, Innovations and Technologies for Sustainability...</a></li>
+                            <li><a href="#">Tender Notice for AICTE IDEA LAB</a></li>
+                            <li><a href="#">Resume of Class work Off-Line</a></li>
+                            <li><a href="#">Classwork and Sankranti Holidays</a></li>
+                            <li><a href="#">Academic Calendar 2021-22 for II B.Tech. I-Semester Lateral Entry</a></li>
+                        </ul>
+                    </div>
+                    <div id="body-1-box-3-content-1-box-3">
+                        <button>Read More</button>
+                    </div>
+                    <div id="body-1-box-3-content-1-box-4">
+                        <button><i class="fa-solid fa-arrow-up"></i></button>
+                        <button><i class="fa-solid fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="body-1-box-4">
+            <div id="body-1-box-4-content-1">
+                <div id="body-1-box-4-content-1-box-1">
+                    <span id="logo"><i class="fa-regular fa-calendar-days"> </i><span id="notification">Up Coming Events</span></span>
+                </div>
+                <div id="body-1-box-4-content-1-box-2">
+                    <div id="body-1-box-4-content-1-box-2-content">
+                        <ul>
+                            <li><a href="#">Recruitment Notification for Project Staff (Adv No.:DST-STI H/03)</a></li>
+                            <li><a href="#">Notification for Formation of Self Help Groups (Adv No.: DST-STIH/SHG/01)</a></li>
+                            <li><a href="#">Application Form for Candidature in Self Help Group </a></li>
+                        </ul>
+                    </div>
+                    <div id="body-1-box-4-content-1-box-3">
+                        <button>Read More</button>
+                    </div>
+                    <div id="body-1-box-4-content-1-box-4">
+                        <button><i class="fa-solid fa-arrow-up"></i></button>
+                        <button><i class="fa-solid fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="body-2">
+        <div id="body-2-box-1">
+            <span id="logo"><i class="fa-regular fa-calendar-days"> </i><span id="name">News & Events</span></span>
+            <a href="#">All News</a>
+        </div>
+        <div id="body-2-images">
+            <div id="body-2-img">
+                <img src="/svec-home-page-img1.jpg" alt="" width="384px" height="200px" style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                <div id="body-2-images-content">
+                    <span><a href="#">One week National Level FDP on Amazon Web <br> Services from 22nd to 27th August,2022 in...</a></span>
+                </div>
+            </div>
+            <div id="body-2-img">
+                <img src="/svec-home-page-img2.jpg" alt="" width="384px" height="200px" style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                <div id="body-2-images-content">
+                    <span><a href="#">SVEC has signed a MOU with M/S <br> SamparkBindhu solutions Private Limited...</a></span>
+                </div>
+            </div>
+            <div id="body-2-img">
+                <img src="/svec-home-page-img3.jpg" alt="" width="384px" height="200px" style="border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                <div id="body-2-images-content">
+                    <span style="position: relative; top: 26px;"><a href="#">12th Graduation day on 22.08.2022</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="body-3">
+        <div id="body-3-box-1">
+            <span id="logo"><i class="fa-regular fa-calendar-days"> </i><span id="name">Achievements</span></span>
+            <a href="#">View All</a>
+        </div>
+        <div id="body-3-images">
+            <div id="body-3-img">
+                <img src="/svec-home-page-img4.jpg" alt="" width="287px" height="190px">
+                <div id="body-3-images-content">
+                    <span style="position: relative; top: 50px;"><a href="#">Cerificate - NAAC Accreditation</a></span>
+                </div>
+            </div>
+            <div id="body-3-img">
+                <img src="/svec-home-page-img5.jpg" alt="" width="287px" height="190px">
+                <div id="body-3-images-content">
+                    <span style="position: relative; top: 25px;"><a href="#">ASCE SVEC Student Chapter Bagged <br>Two Honors in ASCE Student Chapter <br> Awards - 2022</a></span>
+                </div>
+            </div>
+            <div id="body-3-img">
+                <img src="/svec-home-page-img6.jpg" alt="" width="287px" height="190px">
+                <div id="body-3-images-content">
+                    <span style="position: relative; top: 38px;"><a href="#">SVEC Performance Card in ARIIA <br>2021</a></span>
+                </div>
+            </div>
+            <div id="body-3-img">
+                <img src="/svec-home-page-img7.jpg" alt="" width="287.5px" height="190px">
+                <div id="body-3-images-content">
+                    <span style="position: relative; top: 50px;"><a href="#">ISO 9001:2015</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="body-4">
+        <div id="body-4-box-1">
+            <span id="logo"><i class="fa-regular fa-calendar-days"> </i><span id="name">EMINENT PEOPLE VISITED</span></span>
+            <a href="#">View All</a>
+        </div>    
+        <div id="body-4-images">
+            <div id="body-4-images-cont">
+                <div id="body-4-date">
+                    <span id="day">5th GRADUATION DAY</span><br>
+                    <span id="on">On</span><br>
+                    <span id="date">July 9, 2016</span>
+                </div>
+                <div id="body-4-img">
+                    <img src="/svec-home-page-img8.jpg" alt="" width="287px" height="190px">
+                </div>
+                <div id="body-4-content">
+                    <span><a href="#">His Excellency Sri Ch. Vidyasagar R...</a></span>
+                </div>
+            </div>
+            <div id="body-4-images-cont">
+                <div id="body-4-date">
+                    <span id="day">4th GRADUATION DAY</span><br>
+                    <span id="on">On</span><br>
+                    <span id="date">July 15, 2015</span>
+                </div>
+                <div id="body-4-img">
+                    <img src="/svec-home-page-img9.jpg" alt="" width="287px" height="190px">
+                </div>
+                <div id="body-4-content">
+                    <span><a href="#">Dr. G. Satheesh Reddy, Scientific Ad...</a></span>
+                </div>
+            </div>
+            <div id="body-4-images-cont">
+                <div id="body-4-date">
+                    <span id="day">3rd GRADUATION DAY</span><br>
+                    <span id="on">On</span><br>
+                    <span id="date">July 5, 2014</span>
+                </div>
+                <div id="body-4-img">
+                    <img src="/svec-home-page-img10.jpg" alt="" width="287px" height="190px">
+                </div>
+                <div id="body-4-content">
+                    <span><a href="#">Dr. M.Y.S. Prasad, Distinguished Sci...</a></span>
+                </div>
+            </div>
+            <div id="body-4-images-cont">
+                <div id="body-4-date">
+                    <span id="day">2nd GRADUATION DAY</span><br>
+                    <span id="on">On</span><br>
+                    <span id="date">October 13, 2013</span>
+                </div>
+                <div id="body-4-img">
+                    <img src="/svec-home-page-img11.jpg" alt="" width="287px" height="190px">
+                </div>
+                <div id="body-4-content">
+                    <span><a href="#">Dr. K. Kasturirangan, reowned Spa...</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-1">
+        <div id="footer-1-header-1">
+            <span>Quick Links</span>
+        </div>
+        <div id="footer-1-header-2">
+            <span>Contact Us</span>
+        </div>
+        <div id="footer-links">
+            <div id="footer-1-links-1" class="footer-links">
+                <ul>
+                    <li><a href="#">Admission - Indian Nationals</a></li>
+                    <li><a href="#">Admission - Foreign Nationals</a></li>
+                    <li><a href="#">Sports & Games</a></li>
+                    <li><a href="#">Health & Wellness</a></li>
+                    <li><a href="#">Annual Fests</a></li>
+                    <li><a href="#">NSS</a></li>
+                    <li><a href="#">MGNCRE</a></li>
+                    <li><a href="#">Student Council</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Student/Parent Login</a></li>
+                    <li><a href="#">Exam Results</a></li>
+                    <li><a href="#">Placements</a></li>
+                    <li><a href="#">Hostel & Dining</a></li>
+                    <li><a href="#">Transportation</a></li>
+                    <li><a href="#">NCC</a></li>
+                </ul>
+            </div>
+            <div id="footer-1-links-2" class="footer-links">
+                <ul>
+                    <li><a href="#">Fee Payment</a></li>
+                    <li><a href="#">Library</a></li>
+                    <li><a href="#">Facilities</a></li>
+                    <li><a href="#">Dispensary</a></li>
+                    <li><a href="#">APSSDC - SIEMENS - TSDI</a></li>
+                    <li><a href="#">Central Fabrication Unit</a></li>
+                    <li><a href="#">Skill Development Centers</a></li>
+                    <li><a href="#">PMKVY</a></li>
+                    <li><a href="#">TEP</a></li>
+                    <li><a href="#">Campus Green</a></li>
+                    <li><a href="#">News and Events</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Mandatory Disclosure</a></li>
+                    <li><a href="#">STI Hub - SEED, DST</a></li>
+                    <li><a href="#">Idea Lab & Innovation</a></li>
+                    </ul>
+            </div>
+            <div id="footer-1-links-3" class="footer-links">
+                <ul>
+                    <li><a href="#">Anti-Ragging</a></li>
+                    <li><a href="#">Policy Documents</a></li>
+                    <li><a href="#">NAAC</a></li>
+                    <li><a href="#">NBA</a></li>
+                    <li><a href="#">NIRF</a></li>
+                    <li><a href="#">IQAC</a></li>
+                    <li><a href="#">TEQIP-II</a></li>
+                    <li><a href="#">AICTE</a></li>
+                    <li><a href="#">ARIIA</a></li>
+                    <li><a href="#">QS Ranking</a></li>
+                    <li><a href="#">Audit Reports</a></li>
+                    <li><a href="#">Best Practices</a></li>
+                    <li><a href="#">SVEI</a></li>
+                    <li><a href="#">Grievance Redressal</a></li>
+                    <li><a href="#">Minority / SC / ST / OBC Cell</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="footer-1-content-1">
+            <span style="font-weight: bold;">Sree Vidyanikethan Engineering College</span><span><br>
+                Sree Sainath Nagar, <br>
+                Tirupati, <br>
+                Chittoor (District), <br>
+                Andhra Pradesh - 517102. <br>
+                INDIA
+            </span>
+        </div>
+        <div id="footer-1-content-2">
+            <span><i class="fa-solid fa-phone"></i> +91-877-2504888 <br>
+                <i class="fa-solid fa-mobile-screen-button"></i> +91-916-0999977 <br>
+                <i class="fa-solid fa-envelope"></i><pre style="display:inline-block;">   svecp@vidyanikethan.edu</pre>
+            </span>
+        </div>
+        <div id="footer-1-icons">
+            <a href="https://www.facebook.com/MBUSchoolofEngineeringandTechnology" target="_blank"><img src="/facebook-icon.png" alt="" width="30px" height="30px" style="border-radius: 50%;"></a>
+            <a href="https://twitter.com/i/flow/login?redirect_after_login=%2FIVidyanikethan" target="_blank"><img src="/twitter-icon.png" alt="" width="30px" height="30px" style="border-radius: 50%;"></a>
+            <a href="https://www.linkedin.com/company/sree-vidyanikethan-educational-institutions" target="_blank"><img src="/linkedlin-logo.png" alt="" width="30px" height="30px" style="border-radius: 50%;"></a>
+            <a href="https://www.instagram.com/sreevidyanikethanenggcollege/" target="_blank"><img src="/instagram-logo.png" alt="" width="30px" height="30px" style="border-radius: 13px;"></a>
+            <a href="https://www.youtube.com/user/iVidyanikethan" target="_blank"><img src="/youtube-icon.avif" alt="" width="30px" height="30px" style="border-radius: 50%;"></a>
+        </div>
+        <div id="footer-1-content-3">
+            <a href="#">College Infrastructure and Administrators</a>
+        </div>
+    </div>
+    
+    <div id="footer-2">
+        <span>©2020 Sree Vidyanikethan Engineering College. All Rights Reserved. Designed and Developed by <a href="#">G Gowtham Bhat</a></span>
+    </div>
+</body>
+</html>
